@@ -1,0 +1,5 @@
+- name: venkatesh kongara
+  hosts: frontend
+  tasks:
+  - name: ping the server
+    ansible.bultin.ping:
