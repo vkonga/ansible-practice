@@ -6,12 +6,12 @@
     course: "ansible"
     is_live: true
     tools:
-    - linux
-    - shell
+      - linux
+      - shell
     concepts:
       CI: jenkins
       Scripting: "shell, terraform"
     tasks:
-    - name: print course information
-      ansible.builtin.debug:
-        msg: "course is: {{course}}"
+      - name: print course information
+        ansible.builtin.debug:
+          msg: "course is: {{course}}"
