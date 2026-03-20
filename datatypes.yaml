@@ -1,0 +1,17 @@
+- name: datatypes concept
+  hosts: local
+  connection: local
+  vars:
+    duration: 120
+    course: "ansible"
+    is_live: true
+    tools:
+    - linux
+    - shell
+    concepts:
+      CI: jenkins
+      Scripting: "shell, terraform"
+    tasks:
+    - name: print course information
+      ansible.builtin.debug:
+        msg: "course is: {{course}}"
