@@ -4,10 +4,10 @@
   vars_prompt:
   tasks:
   - name: usernames
-    prompt: what is username:
+    prompt: what is username
     private: false
   - name: password
-    prompt: please enter password:
+    prompt: please enter password
     private: false
   tasks:
   - name: printing user information
