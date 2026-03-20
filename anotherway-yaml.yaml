@@ -1,0 +1,7 @@
+- name: another way calling variables from inventory file to yaml
+  hosts: frontend
+  become: yes
+  tasks: 
+  - name: calling variables from inventory
+    ansible.builtin.debug:
+      msg: "hello, I learned {{course}} and completed in {{duration}}"
