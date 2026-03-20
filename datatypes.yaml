@@ -11,7 +11,7 @@
     concepts:
       CI: jenkins
       Scripting: "shell, terraform"
-    tasks:
-      - name: print course information
-        ansible.builtin.debug:
-          msg: "courses is: {{course}}"
+  tasks:
+    - name: print course information
+      ansible.builtin.debug:
+        msg: "courses is: {{course}}"
